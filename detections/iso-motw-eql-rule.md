@@ -96,7 +96,12 @@ This detection focuses on identifying suspicious ISO mounting activity originati
 
 ## Detection Logic (EQL)
 
-<!-- Paste your rule directly below this line -->
+```sql
+any where 
+  event.code == "1" and 
+  winlog.channel == "Microsoft-Windows-VHDMP-Operational" and 
+  winlog.event_data.VhdFileName like~ ("*Temp*", "*.zip*", "*.iso")
+```
 
 ---
 
