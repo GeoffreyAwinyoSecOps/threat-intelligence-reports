@@ -65,3 +65,10 @@ any where
   winlog.channel == "Microsoft-Windows-VHDMP-Operational" and 
   winlog.event_data.VhdFileName like~ ("*Temp*", "*.zip*", "*.iso")
 
+## Detection Content
+
+Detection logic and implementation guidance can be found here:
+
+- [ISO MOTW Bypass Detection (EQL)](../detections/iso-motw-eql-rule.md)
+
+
