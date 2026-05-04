@@ -69,6 +69,6 @@ any where
 
 Detection logic and implementation guidance can be found here:
 
-- [ISO MOTW Bypass Detection (EQL)](https://github.com/GeoffreyAwinyoSecOps/threat-intelligence-reports/tree/main/detections/iso-motw-eql-rule.md)
+- [ISO MOTW Bypass Detection (EQL)] https://github.com/GeoffreyAwinyoSecOps/threat-intelligence-reports/tree/main/detections/iso-motw-eql-rule.md
 
 
