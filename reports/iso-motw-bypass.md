@@ -72,3 +72,4 @@ Detection logic and implementation guidance can be found here:
 - [ISO MOTW Bypass Detection (EQL)](../detections/iso-motw-eql-rule.md)
 
 
+
