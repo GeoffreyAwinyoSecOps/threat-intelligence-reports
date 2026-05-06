@@ -57,13 +57,14 @@ To detect this activity, monitor the following:
 
 ---
 
-## Example Detection Logic (EQL)
+## Detection Logic (EQL)
 
 ```sql
 any where 
   event.code == "1" and 
   winlog.channel == "Microsoft-Windows-VHDMP-Operational" and 
   winlog.event_data.VhdFileName like~ ("*Temp*", "*.zip*", "*.iso")
+```
 
 ## Detection Content
 
