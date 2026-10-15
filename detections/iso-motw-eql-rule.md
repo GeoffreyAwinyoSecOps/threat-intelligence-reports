@@ -18,6 +18,7 @@ By embedding malicious content within ISO files, attackers evade security contro
 
 ## MITRE ATT&CK Mapping
 
+- **T1566** - Phishing: ISO container delivered to the victim through a phishing message.
 - **T1553.005** - Subvert Trust Controls: Mark-of-the-Web Bypass  
 - **T1027** - Obfuscated/Compressed Files  
 - **T1204.002** - User Execution: Malicious File  
