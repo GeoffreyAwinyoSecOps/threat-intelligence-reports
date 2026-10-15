@@ -18,11 +18,26 @@ By embedding malicious content within ISO files, attackers evade security contro
 
 ## MITRE ATT&CK Mapping
 
-- **T1553.005** – Subvert Trust Controls: Mark-of-the-Web Bypass  
-- **T1027** – Obfuscated/Compressed Files  
-- **T1204.002** – User Execution: Malicious File  
+- **T1553.005** - Subvert Trust Controls: Mark-of-the-Web Bypass  
+- **T1027** - Obfuscated/Compressed Files  
+- **T1204.002** - User Execution: Malicious File  
 
 ---
+
+## Cyber Kill Chain Mapping
+
+The ATT&CK techniques above map to the Lockheed Martin Cyber Kill Chain as follows.
+
+| Phase | Activity | ATT&CK |
+|---|---|---|
+| Reconnaissance | Out of scope - targeting not observed in this analysis. | – |
+| Weaponization | Qakbot payload and LNK packaged inside an ISO container. Files extracted from the ISO do not inherit Mark-of-the-Web, bypassing SmartScreen and Office protections. Payload is obfuscated. | T1553.005, T1027 |
+| Delivery | ISO delivered to the victim via phishing. | [T1566.001 / T1566.002] |
+| Exploitation | No software vulnerability exploited. Execution depends on the user mounting the ISO and opening the LNK file. | T1204.002 |
+| Exploitation | No software vulnerability exploited. Execution depends on the user mounting the ISO and opening the LNK file. | T1204.002 |
+
+**Detection opportunity:** 
+The strongest detection points fall in Weaponization and Exploitation, before the payload executes: ISO mounting followed by LNK execution, and child processes spawned from files lacking Mark-of-the-Web.
 
 ## Attack Flow
 
