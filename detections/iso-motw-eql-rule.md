@@ -32,7 +32,7 @@ The ATT&CK techniques above map to the Lockheed Martin Cyber Kill Chain as follo
 |---|---|---|
 | Reconnaissance | Out of scope - targeting not observed in this analysis. | – |
 | Weaponization | Qakbot payload and LNK packaged inside an ISO container. Files extracted from the ISO do not inherit Mark-of-the-Web, bypassing SmartScreen and Office protections. Payload is obfuscated. | T1553.005, T1027 |
-| Delivery | ISO delivered to the victim via phishing. | [T1566.001 / T1566.002] |
+| Delivery | ISO delivered to the victim via phishing. | T1566.001 / T1566.002 |
 | Exploitation | No software vulnerability exploited. Execution depends on the user mounting the ISO and opening the LNK file. | T1204.002 |
 | Exploitation | No software vulnerability exploited. Execution depends on the user mounting the ISO and opening the LNK file. | T1204.002 |
 
