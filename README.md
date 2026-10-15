@@ -27,7 +27,8 @@ This repository contains Cyber Threat Intelligence (CTI) reports and detection e
 | Field | Detail |
 |---|---|
 | Technique | Mark-of-the-Web Bypass via ISO delivery |
-| MITRE ATT&CK | T1553.005, T1027, T1204.002 |
+| MITRE ATT&CK | T1566, T1553.005, T1027, T1204.002 |
+| Cyber Kill Chain | Delivery → Weaponization → Exploitation → Installation |
 | Detection | EQL rule in /detections folder |
 
 ---
